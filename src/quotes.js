@@ -1,4 +1,4 @@
-const hostUrl = `https://lotr-random-quote-api.herokuapp.com/lotr/images/`;
+const hostUrl = `https://lotr-random-quote-api.herokuapp.com/images/`;
 
 const lotrQuotes = [
   {

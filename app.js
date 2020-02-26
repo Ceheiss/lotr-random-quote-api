@@ -10,11 +10,11 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/lotr/quote", (req, res) => {
+app.get("/api/quote", (req, res) => {
   res.json(pickRandomQuote(lotrQuotes));
 });
 
-app.get("/lotr/images/:picture", (req, res) => {
+app.get("/images/:picture", (req, res) => {
   const image = req.params.picture.toLowerCase();
   res.sendFile(`${__dirname}/public/images/${image}`);
 });
