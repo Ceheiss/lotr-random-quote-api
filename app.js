@@ -14,6 +14,11 @@ app.get("/lotr/quote", (req, res) => {
   res.json(pickRandomQuote(lotrQuotes));
 });
 
+app.get("/lotr/images/:picture", (req, res) => {
+  const image = req.params.picture.toLowerCase();
+  res.sendFile(`${__dirname}/public/images/${image}`);
+});
+
 app.listen(port, () =>
   console.log(`Connected to LOTR random quote app on port ${port}`)
 );
