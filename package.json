@@ -2,7 +2,7 @@
   "name": "random-lotr-quote-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest",
     "start": "node app.js"
@@ -10,7 +10,8 @@
   "author": "Cristobal Heiss",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "cors": "^2.8.0"
   },
   "devDependencies": {
     "jest": "^25.1.0"
