@@ -3,15 +3,18 @@ const pickRandomQuote = require('./pickRandomQuote');
 const sampleData = [
   {
     author: 'John',
-    quote: 'Why would you hate on pickles?'
+    quote: 'Why would you hate on pickles?',
+    image: "random/image/url.jpg"
   },
   {
     author: 'Pedro',
-    quote: 'There is a chance that a cosmic pink elephant that reads Tolkien, exists'
+    quote: 'There is a chance that a cosmic pink elephant that reads Tolkien, exists',
+    image: "random/image/url.jpg"
   },
   {
     author: 'Yao',
-    quote: 'What I mean is that meaning means for something to mean something or to have a meaningful meaning... I need a beer'
+    quote: 'What I mean is that meaning means for something to mean something or to have a meaningful meaning... I need a beer',
+    image: "random/image/url.jpg"
   }
 ]
 
@@ -25,6 +28,7 @@ it("should return an object with properties 'quote' and 'author'", ()=> {
   const result = pickRandomQuote(sampleData);
   expect(result.hasOwnProperty('author')).toBe(true);
   expect(result.hasOwnProperty('quote')).toBe(true);
+  expect(result.hasOwnProperty('image')).toBe(true);
 });
 
 it("should pick a random quote", () => {
