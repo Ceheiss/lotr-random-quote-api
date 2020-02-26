@@ -4,7 +4,8 @@ Just visit appPath/lotr/quote and you will get a random Lord of The Rings quote 
 
 ```json
 {
-  "quote": "Yet such is oft the course of deeds that move the wheels of the world: small hands do them because they must, while the eyes of the great are elsewhere.",
-  "author": "Elrond"
+  "quote": "Torment in the dark was the danger that I feared, and it did not hold me back.",
+  "author": "Gimli",
+  "image": "https://lotr-random-quote-api.herokuapp.com/images/gimli.jpg"
 }
 ```

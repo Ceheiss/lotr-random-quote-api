@@ -4,7 +4,8 @@ const port = process.env.PORT || 3000;
 const pickRandomQuote = require("./src/pickRandomQuote");
 const lotrQuotes = require("./src/quotes");
 const rateLimit = require("express-rate-limit");
- 
+const cors = require('cors');
+
 // Has to be enabled since app runs on Heroku
 app.set('trust proxy', 1);
  
@@ -13,12 +14,8 @@ const limiter = rateLimit({
   max: 100 // limit each IP to 100 requests per windowMs
 });
  
-//  apply to all requests
 app.use(limiter);
-
-const cors = require('cors');
 app.use(cors({optionSuccessStatus: 200})); 
-
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
