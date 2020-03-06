@@ -31,6 +31,10 @@ app.get("/images/:picture", (req, res) => {
   res.sendFile(`${__dirname}/public/images/${image}`);
 });
 
+app.get("/*", (req, res) => {
+  res.sendFile(__dirname + "/views/404.html");
+});
+
 app.listen(port, () =>
   console.log(`Connected to LOTR random quote app on port ${port}`)
 );

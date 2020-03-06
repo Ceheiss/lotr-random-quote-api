@@ -1,1 +1,68 @@
-<h1>LOTR</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Roboto|Roboto+Slab" rel="stylesheet">
+    <link href="https://lotr-random-quote-api.herokuapp.com/images/sam.jpg" rel="stylesheet" type="text/css">\
+    <title>Lord of the Quotes</title>
+    <style>
+      header h1 {
+        font-size: 80px;
+        font-family: 'Cinzel Decorative', cursive;
+      }
+
+      body {
+        background-image: linear-gradient(rgba(92, 7, 126, 0.5), rgba(200,0,255,0.5)), url("https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        margin: 80px auto 30px auto;
+      }
+
+      .fab {
+        color: green;
+        margin-left: 15px;
+        transition: 0.3s ease-out;
+      }
+
+      .fab:hover{
+        color: rgba(206, 175, 3, 0.925);
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://lotr-random-quote-api.herokuapp.com/images/t-gondor-tree.png">
+      <h1>The Lord of</br>the Quotes</h1>
+    </header>
+    <section id="container">
+      <p>Greetings, traveller. To use this API is fairly simple and straight forward.</p>
+
+      <p>
+        Just visit appPath/lotr/quote and you will get a random Lord of The Rings quote in the following format:
+      </p>
+    
+      <code>
+        { "quote": "Torment in the dark was the danger that I feared, and it did
+        not hold me back.", "author": "Gimli", "image":
+        "https://lotr-random-quote-api.herokuapp.com/images/gimli.jpg" }
+      </code>
+  
+      <p>If you want to see an example of this API being used, <a href="https://lotr-random-quote.herokuapp.com/">here</a> is a simple React App you can check out.</p>
+  
+      <p>Fancy more LOTR? then check this awesome <a href="https://ceheiss.github.io/LordOfTheIpsum/">Lorem Ipsum Generator</a>.</p>
+    </section>
+    
+    <footer>Developed by Cristobal Heiss  <a href="https://www.freecodecamp.org/ceheiss" target="_blank"><i class="fab fa-free-code-camp"></i></a>  <a href="https://github.com/Ceheiss" target="_blank"><i class="fab fa-github"></i></a>  <a href="https://twitter.com/cristobalheiss" target="_blank"><i class="fab fa-twitter"></i></a>  <a href="https://www.codepen.io/ceheiss" target="_blank"><i class="fab fa-codepen"></i></a></footer>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Micro Service to provide random LOTR quotes
 
-Just visit appPath/lotr/quote and you will get a random Lord of The Rings quote imn the following format:
+Just visit appPath/lotr/quote and you will get a random Lord of The Rings quote in the following format:
 
 ```json
 {
