@@ -3,14 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Roboto|Roboto+Slab" rel="stylesheet">
-    <link href="https://lotr-random-quote-api.herokuapp.com/images/sam.jpg" rel="stylesheet" type="text/css">\
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Roboto|Roboto+Slab" rel="stylesheet">
+    <link href="https://lotr-random-quote-api.herokuapp.com/images/sam.jpg" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="http://img04.deviantart.net/abde/i/2014/106/e/8/white_tree_of_gondor_symbol_by_drdraze-d7ebn9l.png" alt="">
     <title>Lord of the Quotes</title>
     <style>
       header h1 {
-        font-size: 80px;
+        font-size: 75px;
         font-family: 'Cinzel Decorative', cursive;
+        color: white;
+        text-shadow: 3px 3px #333;
+      }
+
+      header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        width: 80%;
+        background-color: white;
+        border: 1px solid #333;
+        border-radius: 7px;
+        font-size: 16px;
+        margin: 10px auto;
+        padding: 15px;
+      }
+
+      #gondor-tree {
+        height: 400px;
+        margin-right: 10px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       body {
@@ -22,14 +55,24 @@
         font-family: 'Roboto', sans-serif;
       }
 
+      code {
+        width: 60%;
+        background: #999;
+        border: 1px solid #eee;
+        border-radius: 7px;
+        padding: 10px;
+        margin: 10px;
+      }
+
       footer {
         display: flex;
         justify-content: center;
         margin: 80px auto 30px auto;
+        color: white;
       }
 
       .fab {
-        color: green;
+        color: #eee;
         margin-left: 15px;
         transition: 0.3s ease-out;
       }
@@ -42,26 +85,36 @@
   </head>
   <body>
     <header>
-      <img src="https://lotr-random-quote-api.herokuapp.com/images/t-gondor-tree.png">
+      <img src="https://lotr-random-quote-api.herokuapp.com/images/t-gondor-tree.png" id="gondor-tree">
       <h1>The Lord of</br>the Quotes</h1>
     </header>
-    <section id="container">
+    <main id="container">
       <p>Greetings, traveller. To use this API is fairly simple and straight forward.</p>
 
       <p>
-        Just visit appPath/lotr/quote and you will get a random Lord of The Rings quote in the following format:
+        Just visit <a href="https://lotr-random-quote-api.herokuapp.com/api/quote">https://lotr-random-quote-api.herokuapp.com/api/quote</a> and you will get a random Lord of The Rings quote in the following format:
       </p>
-    
+      
       <code>
-        { "quote": "Torment in the dark was the danger that I feared, and it did
-        not hold me back.", "author": "Gimli", "image":
-        "https://lotr-random-quote-api.herokuapp.com/images/gimli.jpg" }
+        { 
+        <p>
+          "quote": "Torment in the dark was the danger that I feared, and it did
+          not hold me back.", 
+        </p>
+        <p>
+          "author": "Gimli", 
+        </p>
+        <p>
+          "image":
+          "https://lotr-random-quote-api.herokuapp.com/images/gimli.jpg"
+        </p> 
+        }
       </code>
   
       <p>If you want to see an example of this API being used, <a href="https://lotr-random-quote.herokuapp.com/">here</a> is a simple React App you can check out.</p>
   
       <p>Fancy more LOTR? then check this awesome <a href="https://ceheiss.github.io/LordOfTheIpsum/">Lorem Ipsum Generator</a>.</p>
-    </section>
+    </main>
     
     <footer>Developed by Cristobal Heiss  <a href="https://www.freecodecamp.org/ceheiss" target="_blank"><i class="fab fa-free-code-camp"></i></a>  <a href="https://github.com/Ceheiss" target="_blank"><i class="fab fa-github"></i></a>  <a href="https://twitter.com/cristobalheiss" target="_blank"><i class="fab fa-twitter"></i></a>  <a href="https://www.codepen.io/ceheiss" target="_blank"><i class="fab fa-codepen"></i></a></footer>
   </body>
